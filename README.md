@@ -1,4 +1,4 @@
-# Talisman Wallet
+# Dubai Customs Wallet
 
 <img src="talisman.svg" alt="Talisman" width="15%" align="right" />
 
@@ -8,15 +8,14 @@
 [![chrome-web-store-link](https://img.shields.io/chrome-web-store/v/fijngjgcjhjmmpcmkeiomlglpeiijkld?logo=google-chrome&logoColor=white&style=flat-square)](https://chromewebstore.google.com/detail/talisman-ethereum-and-pol/fijngjgcjhjmmpcmkeiomlglpeiijkld)
 [![firefox-addon-link](https://img.shields.io/amo/v/talisman-wallet-extension?logo=firefox&logoColor=white&style=flat-square)](https://addons.mozilla.org/en-US/firefox/addon/talisman-wallet-extension)
 
-**Multi-Chain Made Easy** with Talisman Wallet.  
+**Multi-Chain Made Easy** with Dubai Customs Wallet.  
 An ultra-secure Ethereum and Polkadot wallet for both beginners and pros.
 
 ## What's inside?
 
-This repo contains the source code for Talisman Wallet.  
-If you want to use Talisman, you can [install it for your browser by following this link](https://talisman.xyz/download).
+This repo contains the source code for Dubai Customs Wallet. 
 
-If you would like to build Talisman from source, please continue reading:
+If you would like to build Dubai Customs Wallet from source, please continue reading:
 
 ## System requirements
 
@@ -35,11 +34,11 @@ Once you have installed **Node.js**, run `corepack enable` to turn it on, then f
 
 1. Clone the repo.
 
-   `git clone git@github.com:TalismanSociety/talisman.git`
+   `git clone git@github.com:akshatsynkcode/wallet.git`
 
 1. Change to the repo directory.
 
-   `cd talisman`
+   `cd wallet`
 
 1. Install dependencies and generate the english translation files (these are loaded by i18next during development).
 
@@ -56,7 +55,7 @@ Once you have installed **Node.js**, run `corepack enable` to turn it on, then f
 
 ## Apps and packages
 
-- `apps/extension`: the non-custodial Talisman Wallet browser extension
+- `apps/extension`: the non-custodial Dubai Customs Wallet browser extension
 - `packages/eslint-config`: shared `eslint` configurations
 - `packages/tsconfig`: shared `tsconfig.json`s used throughout the monorepo
 - `packages/util`: library containing shared non-react code. It is not meant to be npm published.
@@ -162,8 +161,8 @@ When building UI features, please follow the following spec to ensure they're tr
 - `dev:extension` : when working on extension only, for better color output
 - `build`: builds the wallet in `packages/apps/extension/dist/chrome` folder, without sentry keys
 - `build:firefox`: builds the wallet in `packages/apps/extension/dist/firefox` folder, without sentry keys
-- `build:extension:prod` builds the Talisman browser extension (requires sentry settings, Talisman team only)
-- `build:extension:canary` : builds the Talisman browser extension test version, with different ID and icon than prod
+- `build:extension:prod` builds the Dubai Customs browser extension
+- `build:extension:canary` : builds the Dubai Customs browser extension test version, with different ID and icon than prod
 
 ### Build the wallet browser extension using Docker
 
@@ -179,7 +178,3 @@ rm -rf dist && DOCKER_BUILDKIT=1 docker build --output type=local,dest=./dist .
 pnpm changeset
 # Select the packages which have been modified and write a commit message
 ```
-
-## Security disclosures
-
-If you find a security issue or exploit, please email us at **security@talisman.xyz**. Please _DO NOT_ create an issue or PR in this repo for security issues.
