@@ -1,0 +1,57 @@
+{
+  "name": "@talismn/on-chain-id",
+  "version": "0.0.1",
+  "author": "Talisman",
+  "homepage": "https://talisman.xyz",
+  "license": "GPL-3.0-or-later",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "directory": "packages/on-chain-id",
+    "type": "git",
+    "url": "https://github.com/talismansociety/talisman.git"
+  },
+  "main": "dist/talismn-on-chain-id.cjs.js",
+  "module": "dist/talismn-on-chain-id.esm.js",
+  "files": [
+    "/dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src --max-warnings 0",
+    "clean": "rm -rf dist .turbo node_modules"
+  },
+  "dependencies": {
+    "@azns/resolver-core": "https://gitpkg.vercel.app/api/pkg.tgz?url=TalismanSociety%2Fazero-id-resolver%2Fpackages%2Fresolver-core&commit=main",
+    "@talismn/balances": "workspace:*",
+    "@talismn/util": "workspace:*",
+    "anylogger": "^1.0.11"
+  },
+  "devDependencies": {
+    "@polkadot/api": "^10.9.1",
+    "@polkadot/api-contract": "^10.9.1",
+    "@polkadot/types": "^10.9.1",
+    "@talismn/eslint-config": "workspace:*",
+    "@talismn/tsconfig": "workspace:*",
+    "@types/jest": "^27.5.1",
+    "eslint": "^8.52.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "@polkadot/api": "10.x",
+    "@polkadot/api-contract": "10.x",
+    "@polkadot/types": "10.x"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@talismn/eslint-config/base"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "author": "Dubai Customs Wallet",
+  "name": "Dubai Customs - Polkadot Wallet",
+  "description": "Dubai Customs Wallet is Polkadot wallet that unlocks a new world of multichain web3 applications.",
+  "version": "latest",
+  "action": {
+    "default_title": "Dubai Customs Wallet",
+    "default_popup": "popup.html?embedded#/portfolio"
+  },
+  "options_ui": {
+    "page": "dashboard.html#/settings/general",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["file://*/*", "http://*/*", "https://*/*"],
+      "js": ["content_script.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["page.js"],
+      "matches": ["file://*/*", "http://*/*", "https://*/*"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  },
+  "permissions": ["storage", "tabs", "notifications"],
+  "icons": {
+    "16": "exticon.png",
+    "24": "exticon.png",
+    "32": "exticon.png",
+    "48": "exticon.png",
+    "64": "exticon.png",
+    "128": "exticon.png"
+  }
+}

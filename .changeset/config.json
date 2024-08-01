@@ -1,0 +1,21 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@2.1.1/schema.json",
+  "changelog": "@changesets/cli/changelog",
+  "commit": false,
+  "fixed": [
+    ["@talismn/balances", "@talismn/balances-*"],
+    ["@talismn/chain-connector", "@talismn/chain-connector-evm", "@talismn/chaindata-*"]
+  ],
+  "linked": [],
+  "access": "restricted",
+  "baseBranch": "origin/dev",
+  "updateInternalDependencies": "patch",
+  "ignore": [
+    "balances-demo",
+    "extension",
+    "playground",
+    "extension-core",
+    "extension-shared",
+    "talisman-ui"
+  ]
+}

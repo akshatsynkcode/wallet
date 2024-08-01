@@ -1,0 +1,19 @@
+{
+  "name": "@talismn/babel-preset",
+  "version": "0.0.1",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.7",
+    "@babel/preset-typescript": "^7.23.3"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.23.3"
+  }
+}
