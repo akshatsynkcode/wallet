@@ -175,7 +175,7 @@ export const Verify: FC<VerifyProps> = ({ onComplete, onBack, onSkip, mnemonic }
                 onClick={onSkip}
                 type="button"
               >
-                {t("Skip Verification")}
+                {/* {t("Skip Verification")} */}
               </button>
             </div>
             <div className="w-48"></div>

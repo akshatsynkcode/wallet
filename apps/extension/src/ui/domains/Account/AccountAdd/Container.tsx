@@ -125,12 +125,12 @@ const ImportAccountMethodButtons = () => {
   const { t } = useTranslation("admin")
   return (
     <>
-      {/* <AccountCreateMethodButton
+      <AccountCreateMethodButton
         title={t("Import via Recovery Phrase")}
-        subtitle={t("Polkadot or Ethereum account")}
-        networks={["polkadot", "ethereum"]}
+        subtitle={t("Polkadot account")}
+        networks={["polkadot"]}
         to={`/accounts/add/mnemonic`}
-      /> */}
+      />
       {/* <AccountCreateMethodButton
         title={t("Import via Private Key")}
         subtitle={t("Ethereum account")}

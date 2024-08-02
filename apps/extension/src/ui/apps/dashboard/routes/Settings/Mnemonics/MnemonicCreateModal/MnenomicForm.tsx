@@ -59,7 +59,7 @@ const MnemonicFormInner = () => {
             onClick={complete}
             type="button"
           >
-            {t("Skip Verification")}
+            {/* {t("Skip Verification")} */}
           </button>
         </div>
       </div>

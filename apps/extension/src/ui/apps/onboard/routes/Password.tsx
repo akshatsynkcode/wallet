@@ -116,7 +116,7 @@ export const PasswordPage = () => {
             </p>
             <p>
               {t(
-                "If you can't remember the password you set, you should re-install Talisman now, and restart this onboarding process."
+                "If you can't remember the password you set, you should re-install Dubai Customs Wallet now, and restart this onboarding process."
               )}
             </p>
             <Button fullWidth primary className="mt-16" type="button" onClick={navigateNext}>

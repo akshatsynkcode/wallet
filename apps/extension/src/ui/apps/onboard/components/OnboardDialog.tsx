@@ -29,7 +29,7 @@ const DoItLaterButton = ({ onDoItLaterClick }: { onDoItLaterClick: () => void })
         onClick={() => onDoItLaterClick()}
         className="text-body-secondary flex items-center gap-2 align-middle"
       >
-        {t("I'll do it later")} <ArrowRightIcon />
+        {/* {t("I'll do it later")} <ArrowRightIcon /> */}
       </button>
     </span>
   )

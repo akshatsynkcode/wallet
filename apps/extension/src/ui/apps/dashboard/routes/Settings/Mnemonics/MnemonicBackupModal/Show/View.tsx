@@ -67,7 +67,7 @@ export const ViewMnemonic: FC<ShowMnemonicProps> = ({ handleComplete }) => {
         onClick={close}
         type="button"
       >
-        {t("Skip Verification")}
+        {/* {t("Skip Verification")} */}
       </button>
     </div>
   )
